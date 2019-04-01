@@ -1,37 +1,32 @@
-﻿using SingleTrainTrack.NEXT;
-using SingleTrainTrack.NEXT.Extensions;
+﻿using ColossalFramework.UI;
+using QuadTrainTrack.NEXT;
+using QuadTrainTrack.NEXT.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using UnityEngine;
 
-namespace SingleTrainTrack
-{
-    class ModifyExistingNetInfos
-    {
+namespace QuadTrainTrack {
+    class ModifyExistingNetInfos {
         private static bool modified;
+        public static void ModifyExistingTrainTracks() {
 
-        public string Name { get { return "Vanilla Menu Icon Modifier"; } }
-        public static void ModifyExistingIcons()
-        {
-            if (modified)
-            {
+            if (modified) {
                 return;
             }
-            var rail2L = Prefabs.Find<NetInfo>(SharedHelpers.TRAIN_TRACK, false);
-            if (rail2L != null)
-            {
-                rail2L.m_UIPriority = 12;
-                var thumbnails = AssetManager.instance.GetThumbnails(SharedHelpers.TRAIN_TRACK, @"Textures\Rail2L\thumbnails.png");
-                rail2L.m_Atlas = thumbnails;
-                rail2L.m_Thumbnail = thumbnails.name;
-                rail2L.ModifyTitle("Two Lane Two-Way Rail");
+            var railInfos = Resources.FindObjectsOfTypeAll<NetInfo>();
+            var targetRailInfos = railInfos.Where(ri =>
+                ri?.m_netAI is TrainTrackBaseAI &&
+                ri.m_class.m_subService == ItemClass.SubService.PublicTransportTrain &&
+                ri.m_minCornerOffset < 18);
+            foreach (var railInfo in targetRailInfos) {
+                railInfo.m_minCornerOffset = 18;
                 modified = true;
             }
         }
 
-        public static void Reset()
-        {
+        public static void Reset() {
             modified = false;
         }
     }

@@ -1,7 +1,7 @@
-﻿using SingleTrainTrack.NEXT.Texturing;
+﻿using QuadTrainTrack.NEXT.Texturing;
 using UnityEngine;
 
-namespace SingleTrainTrack.NEXT.Extensions
+namespace QuadTrainTrack.NEXT.Extensions
 {
     public static class TextureSetExtensions
     {

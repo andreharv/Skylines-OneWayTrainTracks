@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using SingleTrainTrack.NEXT.Extensions;
+using QuadTrainTrack.NEXT.Extensions;
 
-namespace SingleTrainTrack.NEXT
+namespace QuadTrainTrack.NEXT
 {
     [Flags]
     public enum NetInfoVersion

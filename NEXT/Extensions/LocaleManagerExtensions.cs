@@ -1,7 +1,7 @@
 ﻿using System.Reflection;
 using ColossalFramework.Globalization;
 
-namespace SingleTrainTrack.NEXT.Extensions
+namespace QuadTrainTrack.NEXT.Extensions
 {
     public static class LocaleManagerExtensions
     {

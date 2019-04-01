@@ -1,4 +1,4 @@
-﻿namespace SingleTrainTrack.NEXT
+﻿namespace QuadTrainTrack.NEXT
 {
     public enum CenterLaneType
     {

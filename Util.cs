@@ -11,7 +11,7 @@ using ICities;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace SingleTrainTrack
+namespace QuadTrainTrack
 {
     public static class Util
     {
@@ -92,7 +92,7 @@ namespace SingleTrainTrack
 
                     }
                 }
-                throw new Exception("Failed to find SingleTrainTrack assembly!");
+                throw new Exception("Failed to find QuadTrainTrack assembly!");
 
             }
         }

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SingleTrainTrack.NEXT.Extensions
+namespace QuadTrainTrack.NEXT.Extensions
 {
     public static class EnumExtensions
     {

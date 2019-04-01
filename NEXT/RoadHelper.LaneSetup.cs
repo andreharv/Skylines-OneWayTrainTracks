@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using ColossalFramework;
-using SingleTrainTrack.NEXT.Extensions;
+using QuadTrainTrack.NEXT.Extensions;
 using UnityEngine;
 
-namespace SingleTrainTrack.NEXT
+namespace QuadTrainTrack.NEXT
 {
     public static partial class RoadHelper
     {

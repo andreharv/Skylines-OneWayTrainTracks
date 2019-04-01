@@ -1,2 +1,2 @@
-# Skylines-ElevatedTrainStationTrack
-Elevated Train Station Track mod for Cities: Skylines
+# Skylines-QuadTrainTrack
+Quad Train Track mod for Cities: Skylines

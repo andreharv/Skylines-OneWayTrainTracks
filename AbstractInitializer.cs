@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-namespace SingleTrainTrack
+namespace QuadTrainTrack
 {
     public abstract class AbstractInitializer : MonoBehaviour
     {
@@ -63,43 +63,5 @@ namespace SingleTrainTrack
         }
 
         protected abstract void InitializeImpl();
-
-        protected void CreatePrefab(string newPrefabName, string originalPrefabName, Action<NetInfo> setupAction)
-        {
-            var originalPrefab = FindOriginalPrefab(originalPrefabName);
-
-            if (originalPrefab == null)
-            {
-                UnityEngine.Debug.LogErrorFormat("AbstractInitializer#CreatePrefab - Prefab '{0}' not found (required for '{1}')", originalPrefabName, newPrefabName);
-                return;
-            }
-            if (_customPrefabs.ContainsKey(newPrefabName))
-            {
-                return;
-            }
-            var newPrefab = Util.ClonePrefab(originalPrefab, newPrefabName, transform);
-            if (newPrefab == null)
-            {
-                UnityEngine.Debug.LogErrorFormat("AbstractInitializer#CreatePrefab - Couldn't make prefab '{0}'", newPrefabName);
-                return;
-            }
-            setupAction.Invoke(newPrefab);
-            _customPrefabs.Add(newPrefabName, newPrefab);
-
-        }
-
-        protected static NetInfo FindOriginalPrefab(string originalPrefabName)
-        {
-            NetInfo foundPrefab;
-            if (OriginalPrefabs.TryGetValue(originalPrefabName, out foundPrefab))
-            {
-                return foundPrefab;
-            }
-            foundPrefab = Resources.FindObjectsOfTypeAll<NetInfo>().
-            FirstOrDefault(netInfo => netInfo.name == originalPrefabName);
-            OriginalPrefabs.Add(originalPrefabName, foundPrefab);
-            return foundPrefab;
-        }
-
     }
 }

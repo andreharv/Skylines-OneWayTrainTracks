@@ -1,4 +1,4 @@
-﻿namespace SingleTrainTrack.NEXT.Extensions
+﻿namespace QuadTrainTrack.NEXT.Extensions
 {
     public static partial class NetInfoExtensions
     {

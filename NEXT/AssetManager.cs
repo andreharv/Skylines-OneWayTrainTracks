@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.IO;
 using ColossalFramework;
 using ObjUnity3D;
-using SingleTrainTrack.NEXT.Texturing;
+using QuadTrainTrack.NEXT.Texturing;
 using UnityEngine;
 
-namespace SingleTrainTrack.NEXT
+namespace QuadTrainTrack.NEXT
 {
     public enum TextureType
     {

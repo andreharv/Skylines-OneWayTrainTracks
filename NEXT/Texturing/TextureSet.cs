@@ -1,7 +1,7 @@
 ﻿using ColossalFramework;
 using UnityEngine;
 
-namespace SingleTrainTrack.NEXT.Texturing
+namespace QuadTrainTrack.NEXT.Texturing
 {
     public class TextureSet
     {

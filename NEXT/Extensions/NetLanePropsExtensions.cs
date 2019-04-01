@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using UnityEngine;
 
-namespace SingleTrainTrack.NEXT.Extensions
+namespace QuadTrainTrack.NEXT.Extensions
 {
     public static class NetLanePropsExtensions
     {

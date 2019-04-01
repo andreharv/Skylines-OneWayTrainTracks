@@ -2,7 +2,7 @@
 using System.IO;
 using UnityEngine;
 
-namespace SingleTrainTrack.NEXT.Texturing
+namespace QuadTrainTrack.NEXT.Texturing
 {
     public static class TextureHelper
     {

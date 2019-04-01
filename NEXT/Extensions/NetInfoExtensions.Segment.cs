@@ -1,8 +1,8 @@
-﻿using SingleTrainTrack.NEXT.Texturing;
+﻿using QuadTrainTrack.NEXT.Texturing;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace SingleTrainTrack.NEXT.Extensions
+namespace QuadTrainTrack.NEXT.Extensions
 {
     public static partial class NetInfoExtensions
     {

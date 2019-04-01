@@ -2,7 +2,7 @@
 using System.Linq;
 using UnityEngine;
 
-namespace SingleTrainTrack.NEXT
+namespace QuadTrainTrack.NEXT
 {
     public static class Prefabs
     {

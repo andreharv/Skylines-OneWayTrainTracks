@@ -4,7 +4,7 @@ using System.Linq;
 using System.Reflection;
 using ColossalFramework;
 
-namespace SingleTrainTrack.NEXT.Extensions
+namespace QuadTrainTrack.NEXT.Extensions
 {
     public static class CloningExtensions
     {

@@ -1,7 +1,7 @@
 ﻿using ColossalFramework.UI;
 using UnityEngine;
 
-namespace SingleTrainTrack.NEXT.Extensions
+namespace QuadTrainTrack.NEXT.Extensions
 {
     public static class AssetManagerExtensions
     {

@@ -2,7 +2,7 @@
 using System.Collections;
 using ColossalFramework;
 
-namespace SingleTrainTrack
+namespace QuadTrainTrack
 {
     public class Loading
     {

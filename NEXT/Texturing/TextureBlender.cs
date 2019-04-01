@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace SingleTrainTrack.NEXT.Texturing
+namespace QuadTrainTrack.NEXT.Texturing
 {
     public partial class TextureBlender : ITextureProvider
     {
